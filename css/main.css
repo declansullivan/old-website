@@ -285,6 +285,10 @@ nav ul li {
   float: none;
 }
 
+.projects .important {
+  width: 100%;
+}
+
 .projects {
   text-align: center;
 }
@@ -399,6 +403,5 @@ nav ul li {
 
   .project {
     width: 70%;
-    height: 30vw;
   }
 }
