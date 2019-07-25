@@ -1,3 +1,5 @@
+/* OVERARCHING CSS */
+
 * {
   box-sizing: border-box;
 }
@@ -14,8 +16,8 @@ html, body {
 }
 
 .clear {
-  clear:both;
-  line-height:0;
+  clear: both;
+  line-height: 0;
 }
 
 .header {
@@ -33,6 +35,8 @@ div {
   position: relative;
   margin: 0 auto;
 }
+
+/* NAVBAR */
 
 nav {
   text-align: center;
@@ -60,6 +64,8 @@ nav ul {
 nav ul li {
   display: inline-block;
 }
+
+/* HOME PAGE THIRDS */
 
 .container {
   width: 60%;
@@ -128,6 +134,8 @@ nav ul li {
   text-align: center;
 }
 
+/* MOBILE RELATED */
+
 .mobile-view div {
   width: 0%;
   font-size: 0%;
@@ -138,6 +146,8 @@ nav ul li {
   font-size: 0%;
   visibility: hidden;
 }
+
+/* TEXT SIZING */
 
 .important {
   font-size: 1.7vw;
@@ -189,22 +199,7 @@ nav ul li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.imageholder {
-  text-align: center;
-  width: 100%;
-}
-
-.falcon {
-  width: 60%;
-}
-
-.personal-desc ul {
-  width: 100%;
-}
-
-.personal-desc li {
-  display: block;
-}
+/* EXPERIENCE BOXES */
 
 .experience {
   width: 85%;
@@ -283,6 +278,32 @@ nav ul li {
 .desclink:hover {
   color: gray;
 }
+
+/* PROJECTS */
+
+.container.projects {
+  float: none;
+}
+
+.projects {
+  text-align: center;
+}
+
+.project {
+  width: 40%;
+  padding: 5px;
+  position: relative;
+  margin: 0 auto;
+  margin: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(252, 161, 161, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.proj-img {
+  width: 100%;
+}
+
+/* MOBILE CSS */
 
 @media only screen and (max-width:620px) {
   .sidebar-left, .sidebar-right {
