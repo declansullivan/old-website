@@ -100,6 +100,7 @@ nav ul li {
 
 .break {
   width: 90%;
+  margin-bottom: 1px;
 }
 
 .heading {
@@ -125,6 +126,17 @@ nav ul li {
 .content {
   width: 85%;
   text-align: center;
+}
+
+.mobile-view div {
+  width: 0%;
+  font-size: 0%;
+  visibility: hidden;
+}
+
+.mobile-view .personal-desc.left {
+  font-size: 0%;
+  visibility: hidden;
 }
 
 .important {
@@ -195,11 +207,10 @@ nav ul li {
 }
 
 .experience {
-  width: 50vw;
+  width: 85%;
   padding: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  float: left;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -274,19 +285,87 @@ nav ul li {
 }
 
 @media only screen and (max-width:620px) {
-  .sidebar-right {
+  .sidebar-left, .sidebar-right {
+    visibility: hidden;
     width: 0%;
   }
 
-  nav {
-    text-align: center;
+  .sidebar-left {
+    width: 10%;
   }
 
-  .sidebar-left {
-    text-align: center;
+  .container {
+    width: 80%;
+    float: left;
+  }
+
+  .mid {
+    width: 100%;
+    font-size: 150%;
   }
 
   .svglist img {
-    width: 25%;
+    width: 7%;
+  }
+
+  .important {
+    font-size: 100%;
+  }
+
+  .personal-desc {
+    font-size: 100%;
+  }
+
+  .personal-desc.left {
+    font-size: 90%;
+    text-align: center;
+  }
+
+  .mobile-view div {
+    width: 90%;
+    font-size: 100%;
+    visibility: visible;
+  }
+  
+  .mobile-view .personal-desc.left {
+    font-size: 90%;
+    visibility: visible;
+    text-align: left;
+  }
+
+  .mobile-view .personal-desc.left.cent {
+    text-align: center;
+  }
+
+  .experience {
+    width: 100%;
+  }
+
+  .position {
+    font-size: 100%;
+  }
+  
+  .exptitle {
+    font-size: 100%;
+  }
+  
+  .expdesc {
+    font-size: 70%;
+  }
+  
+  .explink {
+    font-size: 70%;
+  }
+  
+  .expdate {
+    font-size: 60%;
+  }
+  
+  .description {
+    width: 100%;
+  }
+  
+  .fulldesc {
+    font-size: 70%;
   }
 }
