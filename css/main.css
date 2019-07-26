@@ -306,8 +306,9 @@ nav ul li {
 .container.projects {
   width: 60%;
 }
-.projects .important {
-  width: 100%;
+
+#important-proj {
+  font-size: 160%;
 }
 
 .projects {
@@ -355,7 +356,7 @@ nav ul li {
   padding: 0px;
   display: inline;
   font-weight: 700;
-  font-size: 125%;
+  font-size: 115%;
 }
 
 .modal {
@@ -392,7 +393,6 @@ nav ul li {
   float: left;
   width: 100%;
   font-size: 125%;
-  height: 20vh;
   visibility: hidden;
 }
 
