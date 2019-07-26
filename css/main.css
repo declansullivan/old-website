@@ -307,6 +307,7 @@ nav ul li {
 .left-proj {
   width: 30%;
   float: left;
+  text-align: left;
 }
 
 .right-proj {
