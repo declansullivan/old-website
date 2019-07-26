@@ -346,6 +346,7 @@ nav ul li {
   .sidebar-left {
     width: 10%;
   }
+  
 
   .container {
     width: 80%;
@@ -359,6 +360,11 @@ nav ul li {
 
   .svglist img {
     width: 7%;
+  }
+
+  .full-break {
+    width: 0%;
+    height: 0vw;
   }
 
   .important {
