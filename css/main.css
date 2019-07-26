@@ -282,7 +282,7 @@ nav ul li {
 /* PROJECTS */
 
 .container.projects {
-  float: none;
+  width: 60%;
 }
 
 .projects .important {
@@ -291,27 +291,48 @@ nav ul li {
 
 .projects {
   text-align: center;
+  width: 85%;
 }
 
 .project {
-  width: 40%;
+  float: left;
+  width: 100%;
   padding: 5px;
-  position: relative;
-  margin: 0 auto;
-  margin: 20px;
-  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(252, 161, 161, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left-proj {
+  width: 30%;
+  float: left;
+}
+
+.right-proj {
+  width: 68%;
+  float: right;
+  text-align: left;
+  font-size: 100%;
 }
 
 .thumbnail {
   width: 100%;
-  height: 15vw;
+  height: 10vw;
   overflow: hidden;
   margin-bottom: 5px;
 }
 
 .proj-img {
   width: 100%;
+}
+
+.proj-title {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  font-weight: 700;
+  font-size: 125%;
 }
 
 /* MOBILE CSS */
