@@ -422,7 +422,15 @@ nav ul li {
     font-size: 70%;
   }
 
+  .container.projects {
+    width: 80%;
+  }
+
   .project {
-    width: 70%;
+    width: 100%;
+  }
+
+  .proj-title {
+    font-size: 80%;
   }
 }
