@@ -21,6 +21,10 @@ window.onload = function() {
             orgs.style.visibility = "visible";
             document.getElementById(subj + "-button").style.background = "#2E86AB";
         }
+
         hide[ind] = !hide[ind];
+
+        if (hide[0] && hide[1] && hide[2]) document.getElementById("blank").style.visibility = "visible";
+        else document.getElementById("blank").style.visibility = "hidden";
     }
 };
