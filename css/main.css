@@ -307,6 +307,10 @@ nav ul li {
   width: 60%;
 }
 
+.organization-box, .personal-box, .coursework-box {
+  margin-top: 20px;
+}
+
 #important-proj {
   font-size: 160%;
 }
