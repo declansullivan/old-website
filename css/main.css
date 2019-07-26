@@ -433,4 +433,8 @@ nav ul li {
   .proj-title {
     font-size: 80%;
   }
+
+  .right-proj {
+    font-size: 50%;
+  }
 }
