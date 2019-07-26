@@ -1,8 +1,6 @@
 window.onload = function() {
     let hide = [false, false, false];
 
-    console.log(document.getElementById("personal-box"));
-
     document.getElementById("organization").onclick = function() {update("organization", 0)};
     document.getElementById("personal").onclick = function() {update("personal", 1)};
     document.getElementById("coursework").onclick = function() {update("coursework", 2)};

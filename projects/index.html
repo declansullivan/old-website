@@ -48,13 +48,96 @@
 
         <div class="break"><hr></div>
 
+        <!-- MODALS -->
+
+        <div class="modal" id="livewell-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Live Well</p>
+            </div>
+        </div>
+
+        <div class="modal" id="gatedetect-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Gate detector</p>
+            </div>
+        </div>
+
+        <div class="modal" id="chess-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Chess Manager</p>
+            </div>
+        </div>
+
+        <div class="modal" id="beacon-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Beacon</p>
+            </div>
+        </div>
+
+        <div class="modal" id="distancediary-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Distance Diary</p>
+            </div>
+        </div>
+
+        <div class="modal" id="astar-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>A*</p>
+            </div>
+        </div>
+
+        <div class="modal" id="csvtojson-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>CSV to JSON</p>
+            </div>
+        </div>
+
+        <div class="modal" id="wikidiver-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Wiki-Diver</p>
+            </div>
+        </div>
+
+        <div class="modal" id="dsc30-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>DSC 30</p>
+            </div>
+        </div>
+
+        <div class="modal" id="dsc80-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>DSC 80</p>
+            </div>
+        </div>
+
+        <div class="modal" id="cse12-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>CSE 12</p>
+            </div>
+        </div>
+
+        <!-- MODALS END -->
+
+        <!-- PROJECTS -->
+
         <div class="organization-box" id="organization-box">
             
             <span class="important">Organizations</span>
 
             <div class="projects">
                 
-                <div class="project">
+                <div class="project" id="livewell" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/livewell.png" alt=""></img>
@@ -67,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="gatedetect" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/astar.png" alt=""></img>
@@ -94,7 +177,7 @@
 
             <div class="projects">
                 
-                <div class="project">
+                <div class="project" id="chess" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/chess.png" alt=""></img>
@@ -107,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="beacon" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/beacon.png" alt=""></img>
@@ -120,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="distancediary" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/distancediary.png" alt=""></img>
@@ -133,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="astar" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/astar.png" alt=""></img>
@@ -146,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="csvtojson" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/csvtojson.png" alt=""></img>
@@ -159,7 +242,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="wikidiver" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/beacon.png" alt=""></img>
@@ -185,7 +268,7 @@
 
             <div class="projects">
                 
-                <div class="project">
+                <div class="project" id="dsc30" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/dsc30.png" alt=""></img>
@@ -198,7 +281,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="dsc80" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/dsc80.png" alt=""></img>
@@ -211,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="cse12" onclick="displayModal(this)">
                     <div class="left-proj">
                         <div class="thumbnail">
                             <img class="proj-img" src="../images/cse12.png" alt=""></img>
@@ -236,9 +319,32 @@
 
     </div>
 
+    <!-- PROJECTS END -->
+
     <br class="clear" />
 
     <footer class="project-footer">
     </footer>
     
 </body>
+
+<script>
+    let modal = null;
+    let span = null;
+
+    function displayModal(project) {
+        modal = document.getElementById(project.id + "-modal");
+        span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        modal.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        console.log(modal);
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
