@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./filter.js"></script>
 </head>
 
 <body>
@@ -27,6 +28,12 @@
             <div class="personal-desc left"  style="text-align:center;">
                 <span class="important">Filter</span>
             </div>
+
+            <div class="buttons">
+                <div class="button-hold" id="organization"><div class="button" id="organization-button"></div>Organization Work</div>
+                <div class="button-hold" id="personal"><div class="button" id="personal-button"></div>Personal</div>
+                <div class="button-hold" id="coursework"><div class="button" id="coursework-button"></div>Coursework</div>
+            </div>
         </div>
         
         <div class="break"><hr></div>
@@ -40,157 +47,167 @@
         </div>
 
         <div class="break"><hr></div>
-            
-        <span class="important">Organization Work</span>
 
-        <div class="projects">
+        <div class="organization-box" id="organization-box">
             
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Live Well Community Tool</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/livewell.png" alt=""></img>
+            <span class="important">Organization Work</span>
+
+            <div class="projects">
+                
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Live Well Community Tool</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/livewell.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Gate Detector</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/astar.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Gate Detector</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/astar.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
+
             </div>
 
         </div>
 
         <!-- -------- -->
             
-        <span class="important">Personal</span>
+        <div class="personal-box" id="personal-box">
+            <span class="important">Personal</span>
 
-        <div class="projects">
-            
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Chess Tournament Manager</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/chess.png" alt=""></img>
+            <div class="projects">
+                
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Chess Tournament Manager</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/chess.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Beacon</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/beacon.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Beacon</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/beacon.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Distance Diary</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/distancediary.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Distance Diary</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/distancediary.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">A* Pathfinding</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/astar.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">A* Pathfinding</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/astar.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">CSV to JSON</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/chess.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">CSV to JSON</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/csvtojson.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">Wiki-Diver</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/beacon.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">Wiki-Diver</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/beacon.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
+
             </div>
 
         </div>
 
         <!-- -------- -->
             
-        <span class="important">Coursework</span>
+        <div class="coursework-box" id="coursework-box">
+            <span class="important">Coursework</span>
 
-        <div class="projects">
-            
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">DSC 30 - Data Structures and Algorithms</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/dsc30.png" alt=""></img>
+            <div class="projects">
+                
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">DSC 30 - Data Structures and Algorithms</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/dsc30.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">DSC 80 - The Practice and Application of Data Science</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/dsc80.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">DSC 80 - The Practice and Application of Data Science</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/dsc80.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="left-proj">
-                    <span class="proj-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
-                    <div class="thumbnail">
-                        <img class="proj-img" src="../images/cse12.png" alt=""></img>
+                <div class="project">
+                    <div class="left-proj">
+                        <span class="proj-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
+                        <div class="thumbnail">
+                            <img class="proj-img" src="../images/cse12.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div class="right-proj">
+                        THIS IS A PROJECT
                     </div>
                 </div>
-                <div class="right-proj">
-                    THIS IS A PROJECT
-                </div>
+
             </div>
 
         </div>

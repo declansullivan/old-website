@@ -281,10 +281,31 @@ nav ul li {
 
 /* PROJECTS */
 
+.buttons {
+  text-align: left;
+}
+
+.button-hold {
+  width: 100%;
+  height: 3vw;
+  font-size: 110%;
+  line-height: 2vw;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button {
+  width: 2vw;
+  height: 2vw;
+  float: left;
+  margin-right: 5px;
+  background: #2E86AB;
+  border-radius: 50%;
+}
+
 .container.projects {
   width: 60%;
 }
-
 .projects .important {
   width: 100%;
 }
