@@ -362,7 +362,7 @@ nav ul li {
   float: left;
   width: 100%;
   font-size: 125%;
-  height: 10vh;
+  height: 20vh;
   visibility: hidden;
 }
 
@@ -473,5 +473,9 @@ nav ul li {
 
   .right-proj {
     font-size: 50%;
+  }
+
+  .blank {
+    height: 10vh;
   }
 }

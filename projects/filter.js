@@ -63,7 +63,7 @@ window.onload = function() {
         }
         else {
             blank.visibility = "hidden";
-            blank.height = "10vh";
+            blank.height = "20vh";
         }
     }
 };
