@@ -151,7 +151,7 @@ nav ul li {
 
 .important {
   font-size: 1.7vw;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
   width: 100%;
 }
@@ -355,6 +355,13 @@ nav ul li {
   display: inline;
   font-weight: 700;
   font-size: 125%;
+}
+
+.blank {
+  float: left;
+  width: 100%;
+  font-size: 125%;
+  visibility: hidden;
 }
 
 /* MOBILE CSS */
