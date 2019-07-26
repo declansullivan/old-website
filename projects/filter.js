@@ -19,6 +19,12 @@ window.onload = function() {
                 projs[i].style.marginBottom = "0";
             }
 
+            let titles = container.getElementsByClassName("proj-title");
+            for (let i = 0; i < titles.length; i++) {
+                titles[i].style.fontSize = "0%";
+                titles[i].style.height = "0vh";
+            }
+
             container.style.width = "0%";
             container.style.height = "0vw";
             container.style.float = "left";
@@ -33,6 +39,12 @@ window.onload = function() {
                 projs[i].style.padding = "5px";
                 projs[i].style.marginTop = "20px";
                 projs[i].style.marginBottom = "20px";
+            }
+
+            let titles = container.getElementsByClassName("proj-title");
+            for (let i = 0; i < titles.length; i++) {
+                titles[i].style.fontSize = "125%";
+                titles[i].style.height = "auto";
             }
 
             container.style.width = "100%";

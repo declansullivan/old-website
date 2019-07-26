@@ -28,6 +28,7 @@ footer {
   text-align: center;
   background: #fefefe;
   padding: 2px;
+  height: 5vh;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -349,6 +350,7 @@ nav ul li {
 }
 
 .proj-title {
+  z-index: 5;
   margin: 0px;
   padding: 0px;
   display: inline;
