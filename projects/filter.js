@@ -29,9 +29,12 @@ window.onload = function() {
             }
 
             let titles = container.getElementsByClassName("proj-title");
+            let descs = container.getElementsByClassName("proj-desc");
             for (let i = 0; i < titles.length; i++) {
                 titles[i].style.fontSize = "0%";
                 titles[i].style.height = "0vh";
+                descs[i].style.fontSize = "0%";
+                descs[i].style.height = "0vh";
             }
 
             container.style.width = "0%";
@@ -42,6 +45,7 @@ window.onload = function() {
         }
         else {
             let projs = container.getElementsByClassName("project");
+            let descs = container.getElementsByClassName("proj-desc");
             for (let i = 0; i < projs.length; i++) {
                 projs[i].style.width = "100%";
                 projs[i].style.height = "auto";
@@ -54,6 +58,8 @@ window.onload = function() {
             for (let i = 0; i < titles.length; i++) {
                 titles[i].style.fontSize = "125%";
                 titles[i].style.height = "auto";
+                descs[i].style.fontSize = "100%";
+                descs[i].style.height = "auto";
             }
 
             container.style.width = "100%";
