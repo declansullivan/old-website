@@ -1,334 +1,337 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Declan Sullivan projects: Python, Java, JavaScript, and more.">
-    <meta name="robots" content="index,follow">
-    <title>Declan Sullivan - Projects</title>
-    <script src="./filter.js"></script>
-</head>
+<html lang="en-US">
 
-<body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Declan Sullivan projects: Python, Java, JavaScript, and more.">
+        <meta name="robots" content="index,follow">
+        <title>Declan Sullivan - Projects</title>
+        <script src="./filter.js"></script>
+    </head>
 
-    <div class="nav">
-        <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://drive.google.com/file/d/1smANASyKpV0EHgf50kK2-BITSikFXfAk/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        </ul>
-        </nav>
-    </div>
+    <body>
 
-    <div class="sidebar-left">
-        <div class="filler-left"></div>
-        <div class="break"><hr></div>
-
-        <div class="content">
-
-            <div class="buttons">
-                <div class="button-hold" id="organization"><div class="button" id="organization-button"></div>Organizations</div>
-                <div class="button-hold" id="personal"><div class="button" id="personal-button"></div>Personal</div>
-                <div class="button-hold" id="coursework"><div class="button" id="coursework-button"></div>Coursework</div>
-            </div>
+        <div class="nav">
+            <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="https://drive.google.com/file/d/1smANASyKpV0EHgf50kK2-BITSikFXfAk/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+            </nav>
         </div>
+
+        <div class="sidebar-left">
+            <div class="filler-left"></div>
+            <div class="break"><hr></div>
+
+            <div class="content">
+
+                <div class="buttons">
+                    <div class="button-hold" id="organization"><div class="button" id="organization-button"></div>Organizations</div>
+                    <div class="button-hold" id="personal"><div class="button" id="personal-button"></div>Personal</div>
+                    <div class="button-hold" id="coursework"><div class="button" id="coursework-button"></div>Coursework</div>
+                </div>
+            </div>
+            
+            <div class="break"><hr></div>
+
+        </div>
+
+        <div class="container projects">
+
+            <div class="heading">
+                <div class="mid">PROJECTS</div>
+            </div>
+
+            <div class="break"><hr></div>
+
+            <!-- MODALS -->
+
+            <div class="modal" id="livewell-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Live Well</p>
+                </div>
+            </div>
+
+            <div class="modal" id="gatedetect-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Gate detector</p>
+                </div>
+            </div>
+
+            <div class="modal" id="chess-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Chess Manager</p>
+                </div>
+            </div>
+
+            <div class="modal" id="beacon-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Beacon</p>
+                </div>
+            </div>
+
+            <div class="modal" id="distancediary-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Distance Diary</p>
+                </div>
+            </div>
+
+            <div class="modal" id="astar-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>A*</p>
+                </div>
+            </div>
+
+            <div class="modal" id="csvtojson-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>CSV to JSON</p>
+                </div>
+            </div>
+
+            <div class="modal" id="wikidiver-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Wiki-Diver</p>
+                </div>
+            </div>
+
+            <div class="modal" id="dsc30-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>DSC 30</p>
+                </div>
+            </div>
+
+            <div class="modal" id="dsc80-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>DSC 80</p>
+                </div>
+            </div>
+
+            <div class="modal" id="cse12-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>CSE 12</p>
+                </div>
+            </div>
+
+            <!-- MODALS END -->
+
+            <!-- PROJECTS -->
+
+            <div class="organization-box" id="organization-box">
+                
+                <span class="important" id="important-proj">Organizations</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="livewell" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/livewell.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Live Well Community Tool</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="gatedetect" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/astar.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Gate Detector</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+
+            <!-- -------- -->
+                
+            <div class="personal-box" id="personal-box">
+                <span class="important" id="important-proj">Personal</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="chess" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/chess.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Chess Tournament Manager</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="beacon" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Beacon</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="distancediary" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/distancediary.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Distance Diary</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="astar" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/astar.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">A* Pathfinding</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="csvtojson" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/csvtojson.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">CSV to JSON</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="wikidiver" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Wiki-Diver</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+            <!-- -------- -->
+                
+            <div class="coursework-box" id="coursework-box">
+                <span class="important" id="important-proj">Coursework</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="dsc30" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/dsc30.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">DSC 30 - Data Structures and Algorithms</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="dsc80" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/dsc80.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">DSC 80 - The Practice and Application of Data Science</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="cse12" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/cse12.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
+                            <br>
+                            <span class="proj-desc">THIS IS A PROJECT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+            <div class="blank" id="blank">
+                Nothing here :(
+            </div>
+
+            <br class="clear bottom" />
+
+        </div>
+
+        <!-- PROJECTS END -->
+
+        <br class="clear" />
+
+        <footer class="project-footer">
+        </footer>
         
-        <div class="break"><hr></div>
-
-    </div>
-
-    <div class="container projects">
-
-        <div class="heading">
-            <div class="mid">PROJECTS</div>
-        </div>
-
-        <div class="break"><hr></div>
-
-        <!-- MODALS -->
-
-        <div class="modal" id="livewell-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Live Well</p>
-            </div>
-        </div>
-
-        <div class="modal" id="gatedetect-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Gate detector</p>
-            </div>
-        </div>
-
-        <div class="modal" id="chess-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Chess Manager</p>
-            </div>
-        </div>
-
-        <div class="modal" id="beacon-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Beacon</p>
-            </div>
-        </div>
-
-        <div class="modal" id="distancediary-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Distance Diary</p>
-            </div>
-        </div>
-
-        <div class="modal" id="astar-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>A*</p>
-            </div>
-        </div>
-
-        <div class="modal" id="csvtojson-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>CSV to JSON</p>
-            </div>
-        </div>
-
-        <div class="modal" id="wikidiver-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Wiki-Diver</p>
-            </div>
-        </div>
-
-        <div class="modal" id="dsc30-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>DSC 30</p>
-            </div>
-        </div>
-
-        <div class="modal" id="dsc80-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>DSC 80</p>
-            </div>
-        </div>
-
-        <div class="modal" id="cse12-modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>CSE 12</p>
-            </div>
-        </div>
-
-        <!-- MODALS END -->
-
-        <!-- PROJECTS -->
-
-        <div class="organization-box" id="organization-box">
-            
-            <span class="important" id="important-proj">Organizations</span>
-
-            <div class="projects">
-                
-                <div class="project" id="livewell" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/livewell.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Live Well Community Tool</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="gatedetect" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/astar.png" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Gate Detector</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <br class="clear" />
-
-        </div>
-
-
-        <!-- -------- -->
-            
-        <div class="personal-box" id="personal-box">
-            <span class="important" id="important-proj">Personal</span>
-
-            <div class="projects">
-                
-                <div class="project" id="chess" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/chess.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Chess Tournament Manager</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="beacon" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Beacon</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="distancediary" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/distancediary.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Distance Diary</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="astar" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/astar.png" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">A* Pathfinding</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="csvtojson" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/csvtojson.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">CSV to JSON</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="wikidiver" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">Wiki-Diver</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <br class="clear" />
-
-        </div>
-
-        <!-- -------- -->
-            
-        <div class="coursework-box" id="coursework-box">
-            <span class="important" id="important-proj">Coursework</span>
-
-            <div class="projects">
-                
-                <div class="project" id="dsc30" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/dsc30.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">DSC 30 - Data Structures and Algorithms</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="dsc80" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/dsc80.jpeg" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">DSC 80 - The Practice and Application of Data Science</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-                <div class="project" id="cse12" onclick="displayModal(this)">
-                    <div class="left-proj">
-                        <div class="thumbnail">
-                            <img class="proj-img" src="../images/cse12.png" alt=""></img>
-                        </div>
-                    </div>
-                    <div class="right-proj">
-                        <span class="proj-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
-                        <br>
-                        <span class="proj-desc">THIS IS A PROJECT</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <br class="clear" />
-
-        </div>
-
-        <div class="blank" id="blank">
-            Nothing here :(
-        </div>
-
-        <br class="clear bottom" />
-
-    </div>
-
-    <!-- PROJECTS END -->
-
-    <br class="clear" />
-
-    <footer class="project-footer">
-    </footer>
-    
-</body>
+    </body>
+</html>
 
 <script>
     let modal = null;
