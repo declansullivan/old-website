@@ -98,6 +98,10 @@ nav ul li {
   text-align: center;
 }
 
+.svglist {
+  margin-bottom: 3%;
+}
+
 .svglist a {
   margin-left: 3%;
   margin-right: 3%;
