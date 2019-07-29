@@ -1,2 +1,2 @@
 # declansullivan.github.io
- Personal Website
+Declan Sullivan personal website
