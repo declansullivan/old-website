@@ -424,8 +424,12 @@ nav ul li {
     font-size: 150%;
   }
 
+  .svglist {
+    margin-bottom: 10px;
+  }
+
   .svglist img {
-    width: 7%;
+    width: 10%;
   }
 
   .full-break {
