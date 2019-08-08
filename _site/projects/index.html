@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Declan Sullivan projects: Python, Java, JavaScript, and more.">
+        <meta name="keywords" content="Declan Sullivan, Declan, Sullivan, projects, python, java">
+        <meta name="robots" content="index,follow">
+        <title>Declan Sullivan - Projects</title>
+        <script src="./filter.js"></script>
+    </head>
+
+    <body>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/coursework">Coursework</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="https://drive.google.com/file/d/1smANASyKpV0EHgf50kK2-BITSikFXfAk/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-left">
+            <div class="filler-left"></div>
+            <div class="break"><hr></div>
+
+            <div class="content">
+
+                <div class="buttons">
+                    <div class="button-hold" id="organization"><div class="button" id="organization-button"></div>Organizations</div>
+                    <div class="button-hold" id="personal"><div class="button" id="personal-button"></div>Personal</div>
+                    <div class="button-hold" id="coursework"><div class="button" id="coursework-button"></div>Coursework</div>
+                </div>
+            </div>
+            
+            <div class="break"><hr></div>
+
+        </div>
+
+        <div class="container projects">
+
+            <div class="heading">
+                <div class="mid">PROJECTS</div>
+            </div>
+
+            <div class="break"><hr></div>
+
+            <!-- MODALS -->
+
+            <div class="modal" id="livewell-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Live Well</p>
+                </div>
+            </div>
+
+            <div class="modal" id="gatedetect-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Gate detector</p>
+                </div>
+            </div>
+
+            <div class="modal" id="chess-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Chess Manager</p>
+                </div>
+            </div>
+
+            <div class="modal" id="beacon-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Beacon</p>
+                </div>
+            </div>
+
+            <div class="modal" id="distancediary-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Distance Diary</p>
+                </div>
+            </div>
+
+            <div class="modal" id="astar-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>A*</p>
+                </div>
+            </div>
+
+            <div class="modal" id="csvtojson-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>CSV to JSON</p>
+                </div>
+            </div>
+
+            <div class="modal" id="wikidiver-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Wiki-Diver</p>
+                </div>
+            </div>
+
+            <div class="modal" id="website-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Website</p>
+                </div>
+            </div>
+
+            <div class="modal" id="dsc30-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>DSC 30</p>
+                </div>
+            </div>
+
+            <div class="modal" id="dsc80-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>DSC 80</p>
+                </div>
+            </div>
+
+            <div class="modal" id="cse12-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>CSE 12</p>
+                </div>
+            </div>
+
+            <!-- MODALS END -->
+
+            <!-- PROJECTS -->
+
+            <div class="organization-box" id="organization-box">
+                
+                <span class="important" id="important-proj">Organizations</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="livewell" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/livewell.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Live Well Community Tool</span>
+                            <br>
+                            <span class="proj-desc">Web application built with JavaScript, JQuery, Firebase, and Google Charts. Built as a part of
+                                Triton Software Engineering for a non-profit to evaluate markets based on a series of questions in order for them to 
+                                learn how to improve the market.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="gatedetect" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/astar.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Gate Detector</span>
+                            <br>
+                            <span class="proj-desc">Python script written for the Triton Robosub team. Used the OpenCV and NumPy packages to first detect and
+                                track color from a webcam, then find the optimal path to move through when presented with a three pronged gate.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+
+            <!-- -------- -->
+                
+            <div class="personal-box" id="personal-box">
+                <span class="important" id="important-proj">Personal</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="chess" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/chess.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Chess Tournament Manager</span>
+                            <br>
+                            <span class="proj-desc">Program designed for my high school calculus teacher. Written in Java and using JFrame for the GUI, the program
+                                allows for players to be added to a tournament, then pairs them up against each other using the Swiss System. Players are assigned
+                                sides and all matches and results are logged.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="beacon" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Beacon</span>
+                            <br>
+                            <span class="proj-desc">Web application built for <a href="https://www.sdhacks.io/" target="_blank" rel="noopener noreferrer">SD Hacks</a> 2018.
+                                Uses JavaScript, JQuery, Ajax, JSONBin.io, and HERE.com API to display a map full of current events visible to anyone on any browser. Allows
+                                for creation of events and immediate addition to the map for all.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="distancediary" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/distancediary.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Distance Diary</span>
+                            <br>
+                            <span class="proj-desc">Alexa skill written in Python made for the Tech for Good Hackathon. Uses AWS Lambda, AWS DynamoDB, and the boto3 
+                                API for communication with database. Encourages users to ride their bike as opposed to driving by offering incentives in the form of money saved,
+                                calories burned, and logs all savings for future reference.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="astar" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/astar.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">A* Pathfinding</span>
+                            <br>
+                            <span class="proj-desc">Visualization of the A* pathfinding algorithm. Written in Python using the tkinter library for the gui. Also implements a 
+                                game where the user can run from squares that chase them using the algorithm.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="csvtojson" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/csvtojson.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">CSV to JSON</span>
+                            <br>
+                            <span class="proj-desc">Python script to take a csv file of student grades and convert them to a JSON instead, improving readability for students
+                                as well as helped me learn more about JSON and pandas when I was first introduced to them.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="wikidiver" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">Wiki-Diver</span>
+                            <br>
+                            <span class="proj-desc">Twitter bot written in Python running on a Raspberry Pi in my room. Started at a random twitter page and scrapes the page
+                                it was previously on for links, then picks a new link at random to move to. Moving forwards one link per four hours indefinitely.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="website" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/website.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">This Website</span>
+                            <br>
+                            <span class="proj-desc">This website was fully made by me! It's got all the things that make a site hip like modal boxes and text that highlights
+                                when you hover it. There's even some JavaScript floating around in there! It took all of my effort to not let it end up looking like it was 
+                                from before I was born.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+            <!-- -------- -->
+                
+            <div class="coursework-box" id="coursework-box">
+                <span class="important" id="important-proj">Coursework</span>
+
+                <div class="projects">
+                    
+                    <div class="project" id="dsc30" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/dsc30.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">DSC 30 - Data Structures and Algorithms</span>
+                            <br>
+                            <span class="proj-desc">Java course that involved implementing data structures like stacks, queues, heaps, hash tables, bloom filters, linked
+                                lists, trees, as well as algorithms like Huffman Encoding, A*, BFS, DFS, Djikstra's, Kruskal's, and sorting algorithms.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="dsc80" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/dsc80.jpeg" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">DSC 80 - The Practice and Application of Data Science</span>
+                            <br>
+                            <span class="proj-desc">Course that introduced topics like machine learning, pipelines, pandas, and working with spatial, text, and other kinds
+                                of data. Worked with tools like pandas, folium, scikit-learn, jupyter notebook, and regex. Also learned about techniques like tf-idf, imputation,
+                                and more.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project" id="cse12" onclick="displayModal(this)">
+                        <div class="left-proj">
+                            <div class="thumbnail">
+                                <img class="proj-img" src="../images/cse12.png" alt=""></img>
+                            </div>
+                        </div>
+                        <div class="right-proj">
+                            <span class="proj-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
+                            <br>
+                            <span class="proj-desc">Java course working with data structures. Easier version of DSC 30 needed to switch into computer science. Main benefit was the
+                                introduction of the C language for the implementation of a stack.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br class="clear" />
+
+            </div>
+
+            <div class="blank" id="blank">
+                Nothing here :(
+            </div>
+
+            <br class="clear bottom" />
+
+        </div>
+
+        <!-- PROJECTS END -->
+
+        <br class="clear" />
+
+        <footer class="project-footer">
+        </footer>
+        
+    </body>
+</html>
+
+<script>
+    let modal = null;
+    let span = null;
+
+    function displayModal(project) {
+        modal = document.getElementById(project.id + "-modal");
+        span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        modal.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        console.log(modal);
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
