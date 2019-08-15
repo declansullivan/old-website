@@ -311,24 +311,25 @@ nav ul li {
   border-radius: 50%;
 }
 
-.container.projects {
+.container.list {
+  text-align: center;
   width: 60%;
 }
 
-.organization-box, .personal-box, .coursework-box {
+.topic {
   margin-top: 20px;
 }
 
-#important-proj {
+#important-box {
   font-size: 160%;
 }
 
-.projects {
+.boxes {
   text-align: center;
   width: 85%;
 }
 
-.project {
+.box {
   float: left;
   cursor: pointer;
   width: 100%;
@@ -339,11 +340,11 @@ nav ul li {
   box-shadow: 0 4px 8px 0 rgba(252, 161, 161, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project a {
+.box a {
   color: #2E86AB;
 }
 
-.project a:hover {
+.box a:hover {
   color: gray;
 }
 
@@ -371,7 +372,7 @@ nav ul li {
   width: 100%;
 }
 
-.proj-title {
+.box-title {
   margin: 0px;
   padding: 0px;
   display: inline;
@@ -416,7 +417,17 @@ nav ul li {
   visibility: hidden;
 }
 
-/* PROJECTS */
+/* COURSEWORK */
+
+.box {
+  text-align: left;
+}
+
+.box.course:hover {
+  cursor: auto;
+}
+
+/* BLOG */
 
 .blog {
   float: left;
@@ -530,11 +541,11 @@ nav ul li {
     font-size: 70%;
   }
 
-  .container.projects {
+  .container.list {
     width: 80%;
   }
 
-  .project {
+  .box {
     width: 100%;
   }
 
