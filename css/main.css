@@ -460,7 +460,6 @@ nav ul li {
     width: 10%;
   }
   
-
   .container {
     width: 80%;
     float: left;
@@ -490,7 +489,7 @@ nav ul li {
   }
 
   .important {
-    font-size: 120%;
+    font-size: 150%;
   }
 
   .personal-desc {
