@@ -156,6 +156,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/livewell.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">Live Well Community Tool</span>
                             <br>
                             <span class="box-desc">Web application built with JavaScript, JQuery, Firebase, and Google Charts. Built as a part of
@@ -170,6 +173,9 @@
                             <div class="thumbnail">
                                 <img class="proj-img" src="../images/astar.png" alt=""></img>
                             </div>
+                        </div>
+                        <div class="thumbnail-right">
+                            <img class="proj-img" src="../images/astar.png" alt=""></img>
                         </div>
                         <div class="right-proj">
                             <span class="box-title">Gate Detector</span>
@@ -201,6 +207,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/chess.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">Chess Tournament Manager</span>
                             <br>
                             <span class="box-desc">Program designed for my high school calculus teacher. Written in Java and using JFrame for the GUI, the program
@@ -217,6 +226,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">Beacon</span>
                             <br>
                             <span class="box-desc">Web application built for <a href="https://www.sdhacks.io/" target="_blank" rel="noopener noreferrer">SD Hacks</a> 2018.
@@ -233,6 +245,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/distancediary.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">Distance Diary</span>
                             <br>
                             <span class="box-desc">Alexa skill written in Python made for the Tech for Good Hackathon. Uses AWS Lambda, AWS DynamoDB, and the boto3 
@@ -249,6 +264,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/astar.png" alt=""></img>
+                            </div>
                             <span class="box-title">A* Pathfinding</span>
                             <br>
                             <span class="box-desc">Visualization of the A* pathfinding algorithm. Written in Python using the tkinter library for the gui. Also implements a 
@@ -264,6 +282,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/csvtojson.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">CSV to JSON</span>
                             <br>
                             <span class="box-desc">Python script to take a csv file of student grades and convert them to a JSON instead, improving readability for students
@@ -279,6 +300,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/beacon.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">Wiki-Diver</span>
                             <br>
                             <span class="box-desc">Twitter bot written in Python running on a Raspberry Pi in my room. Started at a random twitter page and scrapes the page
@@ -294,6 +318,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/website.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">This Website</span>
                             <br>
                             <span class="box-desc">This website was fully made by me! It's got all the things that make a site hip like modal boxes and text that highlights
@@ -323,6 +350,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/dsc30.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">DSC 30 - Data Structures and Algorithms</span>
                             <br>
                             <span class="box-desc">Java course that involved implementing data structures like stacks, queues, heaps, hash tables, bloom filters, linked
@@ -338,6 +368,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/dsc80.jpeg" alt=""></img>
+                            </div>
                             <span class="box-title">DSC 80 - The Practice and Application of Data Science</span>
                             <br>
                             <span class="box-desc">Course that introduced topics like machine learning, pipelines, pandas, and working with spatial, text, and other kinds
@@ -354,6 +387,9 @@
                             </div>
                         </div>
                         <div class="right-proj">
+                            <div class="thumbnail-right">
+                                <img class="proj-img" src="../images/cse12.png" alt=""></img>
+                            </div>
                             <span class="box-title">CSE 12 - Basic Data Structures and Object-Oriented Design</span>
                             <br>
                             <span class="box-desc">Java course working with data structures. Easier version of DSC 30 needed to switch into computer science. Main benefit was the
@@ -392,7 +428,7 @@
 
     function displayModal(project) {
         modal = document.getElementById(project.id + "-modal");
-        span = document.getElementsByClassName("close")[0];
+        span = modal.getElementsByClassName("close")[0];
         span.onclick = function() {
             modal.style.display = "none";
         }
@@ -400,7 +436,6 @@
     }
 
     window.onclick = function(event) {
-        console.log(modal);
         if (event.target == modal) {
             modal.style.display = "none";
         }

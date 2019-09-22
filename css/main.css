@@ -141,6 +141,11 @@ nav ul li {
   text-align: center;
 }
 
+.small-break {
+  display: block;
+  height: 15px;
+}
+
 /* MOBILE RELATED */
 
 .mobile-view div {
@@ -368,6 +373,11 @@ nav ul li {
   margin-bottom: 5px;
 }
 
+.thumbnail-right {
+  width: 0%;
+  display: none;
+}
+
 .proj-img {
   width: 100%;
 }
@@ -410,6 +420,12 @@ nav ul li {
   cursor: pointer;
 }
 
+.modal-content p {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
 .blank {
   float: left;
   width: 100%;
@@ -442,6 +458,11 @@ nav ul li {
 /* MOBILE CSS */
 
 @media only screen and (max-width:620px) {
+  nav a {
+    font-size: 90%;
+    padding: 5px;
+  }
+
   .sidebar-left, .sidebar-right {
     visibility: hidden;
     width: 0%;
@@ -451,7 +472,6 @@ nav ul li {
     width: 10%;
   }
   
-
   .container {
     width: 80%;
     float: left;
@@ -459,7 +479,7 @@ nav ul li {
 
   .mid {
     width: 100%;
-    font-size: 150%;
+    font-size: 200%;
   }
 
   .svglist {
@@ -481,11 +501,11 @@ nav ul li {
   }
 
   .important {
-    font-size: 100%;
+    font-size: 150%;
   }
 
   .personal-desc {
-    font-size: 100%;
+    font-size: 110%;
   }
 
   .personal-desc.left {
@@ -495,12 +515,12 @@ nav ul li {
 
   .mobile-view div {
     width: 90%;
-    font-size: 100%;
+    font-size: 120%;
     visibility: visible;
   }
   
   .mobile-view .personal-desc.left {
-    font-size: 90%;
+    font-size: 110%;
     visibility: visible;
     text-align: left;
   }
@@ -514,23 +534,23 @@ nav ul li {
   }
 
   .position {
-    font-size: 100%;
+    font-size: 120%;
   }
   
   .exptitle {
-    font-size: 100%;
+    font-size: 120%;
   }
   
   .expdesc {
-    font-size: 70%;
+    font-size: 100%;
   }
   
   .explink {
-    font-size: 70%;
+    font-size: 100%;
   }
   
   .expdate {
-    font-size: 60%;
+    font-size: 90%;
   }
   
   .description {
@@ -538,23 +558,33 @@ nav ul li {
   }
   
   .fulldesc {
-    font-size: 70%;
+    font-size: 100%;
   }
 
   .container.list {
     width: 80%;
   }
 
-  .box {
-    width: 100%;
-  }
-
-  .proj-title {
-    font-size: 80%;
+  .left-proj {
+    width: 0%;
+    display: none;
   }
 
   .right-proj {
-    font-size: 50%;
+    width: 100%;
+  }
+
+  .thumbnail-right {
+    width: 100%;
+    display: block;
+  }
+
+  .box-title {
+    font-size: 110%;
+  }
+
+  .box-desc {
+    font-size: 100%;
   }
 
   .blank {
