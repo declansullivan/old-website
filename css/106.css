@@ -14,10 +14,19 @@
     width: 80%;
 }
 
-.temp {
-    width: 70%;
+.chartbox {
+    width: 100%;
 }
 
-.emphasize {
-    font-size: 200%;
+.chart {
+    text-align: left;
+    float: left;
+}
+
+.chart img {
+    width: 100%;
+}
+
+.subpart {
+    font-size: 150%;
 }
