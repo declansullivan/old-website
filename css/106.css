@@ -31,3 +31,7 @@
 .subpart {
     font-size: 150%;
 }
+
+.bold {
+    font-weight: bold;
+}
