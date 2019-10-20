@@ -1,5 +1,6 @@
 var dates = ['Jan-18', 'Feb-18', 'Mar-18', 'Apr-18', 'May-18', 'Jun-18', 'Jul-18', 'Aug-18', 'Sep-18', 'Oct-18', 'Nov-18', 'Dec-18', 'Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19']
 var jans = ['Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+var years = [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028]
 
 document.addEventListener('DOMContentLoaded', function () {
     var myChart = Highcharts.chart('chart0', {
@@ -223,6 +224,33 @@ document.addEventListener('DOMContentLoaded', function () {
         series: [{
             name: 'Central',
             data: [11232, 9152, 8406, 7940, 8607, 10228, 8993, 12463, 6799, 7583, 9037, 8418, 9279, 7804, 11764, 9431, 7112, 9250, 7773, 8276, 9376, 12847, 8713, 6881, 9227, 9194, 8185, 10200, 12377, 7632, 7440]
+        }]
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('mychart', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Profits if Declan remains Hired'
+        },
+        yAxis: {
+            title: {
+                text: 'USD Profits'
+            }
+        },
+        xAxis: {
+            tickInterval: 1,
+            labels: {
+                enabled: true,
+                formatter: function() { return years[this.value];},
+            }
+        },
+        series: [{
+            name: 'Profits',
+            data: [1574815, 2400139, 2718201, 3901939, 5912921, 7981388, 10302938, 13932847, 19019765]
         }]
     });
 });
