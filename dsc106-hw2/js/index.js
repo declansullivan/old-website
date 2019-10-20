@@ -1,5 +1,5 @@
 var dates = ['Jan-18', 'Feb-18', 'Mar-18', 'Apr-18', 'May-18', 'Jun-18', 'Jul-18', 'Aug-18', 'Sep-18', 'Oct-18', 'Nov-18', 'Dec-18', 'Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19']
-var jans = ['1/1/2016', '1/2/2016', '1/3/2016', '1/4/2016', '1/5/2016', '1/6/2016', '1/7/2016', '1/8/2016', '1/9/2016', '1/10/2016', '1/11/2016', '1/12/2016', '1/13/2016', '1/14/2016', '1/15/2016', '1/16/2016', '1/17/2016', '1/18/2016', '1/19/2016', '1/20/2016', '1/21/2016', '1/22/2016', '1/23/2016', '1/24/2016', '1/25/2016', '1/26/2016', '1/27/2016', '1/28/2016', '1/29/2016', '1/30/2016', '1/31/2016']
+var jans = ['Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 document.addEventListener('DOMContentLoaded', function () {
     var myChart = Highcharts.chart('chart0', {
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'line'
         },
         title: {
-            text: 'Fish Fillet Sales Jan \'16 for the Central'
+            text: 'Fish Fillet Sales Jan \'16 for Central'
         },
         yAxis: {
             title: {
