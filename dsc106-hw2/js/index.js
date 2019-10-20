@@ -1,4 +1,5 @@
 var dates = ['Jan-18', 'Feb-18', 'Mar-18', 'Apr-18', 'May-18', 'Jun-18', 'Jul-18', 'Aug-18', 'Sep-18', 'Oct-18', 'Nov-18', 'Dec-18', 'Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19']
+var jans = ['1/1/2016', '1/2/2016', '1/3/2016', '1/4/2016', '1/5/2016', '1/6/2016', '1/7/2016', '1/8/2016', '1/9/2016', '1/10/2016', '1/11/2016', '1/12/2016', '1/13/2016', '1/14/2016', '1/15/2016', '1/16/2016', '1/17/2016', '1/18/2016', '1/19/2016', '1/20/2016', '1/21/2016', '1/22/2016', '1/23/2016', '1/24/2016', '1/25/2016', '1/26/2016', '1/27/2016', '1/28/2016', '1/29/2016', '1/30/2016', '1/31/2016']
 
 document.addEventListener('DOMContentLoaded', function () {
     var myChart = Highcharts.chart('chart0', {
@@ -114,6 +115,114 @@ document.addEventListener('DOMContentLoaded', function () {
         }, {
             name: 'Central',
             data: [371758, 394944, 371698, 383213, 411381, 383726, 395865, 385962, 380019, 341113, 362978, 340130, 358696, 368463, 343966, 362020, 360401, 351858, 341534, 340279, 345807]
+        }]
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('chartf1', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Fish Fillet Sales Jan \'16 for the Southwest'
+        },
+        yAxis: {
+            title: {
+                text: 'USD Sales'
+            }
+        },
+        xAxis: {
+            tickInterval: 1,
+            labels: {
+                enabled: true,
+                formatter: function() { return jans[this.value];},
+            }
+        },
+        series: [{
+            name: 'Southwest',
+            data: [10204, 7316, 8683, 8429, 10085, 9652, 8985, 10985, 7616, 7105, 9506, 8424, 9316, 8832, 10360, 8140, 7152, 9602, 8425, 9944, 9787, 11615, 9015, 7722, 9428, 8632, 9102, 9959, 10941, 7877, 8302]
+        }]
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('chartf2', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Fish Fillet Sales Jan \'16 for the Northwest'
+        },
+        yAxis: {
+            title: {
+                text: 'USD Sales'
+            }
+        },
+        xAxis: {
+            tickInterval: 1,
+            labels: {
+                enabled: true,
+                formatter: function() { return jans[this.value];},
+            }
+        },
+        series: [{
+            name: 'Northwest',
+            data: [9924, 9028, 8105, 8034, 9879, 9360, 8834, 10639, 8589, 7702, 8566, 8555, 9872, 8617, 10503, 8543, 7177, 9107, 8765, 9474, 9876, 10598, 8058, 7680, 8892, 7952, 8609, 9768, 10364, 8465, 8369]
+        }]
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('chartf3', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Fish Fillet Sales Jan \'16 for the Southeast'
+        },
+        yAxis: {
+            title: {
+                text: 'USD Sales'
+            }
+        },
+        xAxis: {
+            tickInterval: 1,
+            labels: {
+                enabled: true,
+                formatter: function() { return jans[this.value];},
+            }
+        },
+        series: [{
+            name: 'Southeast',
+            data: [11734, 8005, 7011, 8201, 8874, 9674, 8370, 11630, 6890, 7520, 9312, 7735, 8416, 8826, 11533, 8346, 7647, 8793, 8436, 8426, 8637, 11709, 8189, 7167, 8545, 8565, 8954, 9376, 12241, 7727, 7269]
+        }]
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var myChart = Highcharts.chart('chartf4', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Fish Fillet Sales Jan \'16 for the Central'
+        },
+        yAxis: {
+            title: {
+                text: 'USD Sales'
+            }
+        },
+        xAxis: {
+            tickInterval: 1,
+            labels: {
+                enabled: true,
+                formatter: function() { return jans[this.value];},
+            }
+        },
+        series: [{
+            name: 'Central',
+            data: [11232, 9152, 8406, 7940, 8607, 10228, 8993, 12463, 6799, 7583, 9037, 8418, 9279, 7804, 11764, 9431, 7112, 9250, 7773, 8276, 9376, 12847, 8713, 6881, 9227, 9194, 8185, 10200, 12377, 7632, 7440]
         }]
     });
 });
