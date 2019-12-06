@@ -1,29 +1,6 @@
-
-Territory	Release Date	Opening Weekend Opening Weekend Theaters	Maximum Theaters	Theatrical Engagements	Total Box Office	Report Date
-Argentina	5/25/2018	$461,230	0	0	0	$904,099	1/1/2019
-Australia*	5/25/2018	$4,998,015	785	785	2418	$12,937,598	11/16/2018
-Brazil	5/25/2018	$1,300,000	0	0	0	$3,618,076	8/9/2018
-Bulgaria	5/25/2018	$131,243	0	0	0	$421,718	2/26/2019
-China	5/24/2018	$9,700,000	79127	79127	92805	$16,600,000	6/18/2018
-Czech Republic	5/25/2018	$335,746	161	161	459	$904,395	1/1/2019
-France	5/25/2018	$3,900,000	0	0	0	$11,329,702	8/31/2018
-Germany	5/25/2018	$4,300,000	0	0	0	$16,957,284	10/11/2018
-Hong Kong	5/25/2018	$0	0	0	0	$953,218	6/8/2018
-India	5/25/2018	$199,823	0	0	0	$300,771	6/15/2018
-Indonesia	5/23/2018	$0	0	0	0	$1,773,295	1/1/2019
-Italy	5/23/2018	$1,723,824	0	0	0	$5,255,534	1/22/2019
-Japan	6/29/2018	$5,900,000	0	0	0	$18,919,408	8/16/2018
-Lithuania	5/25/2018	$22,535	187	187	359	$68,836	8/8/2018
-Mexico	5/25/2018	$2,467,765	0	0	0	$4,935,067	7/19/2018
-Netherlands	5/25/2018	$720,594	124	563	1373	$2,904,945	9/16/2018
-New Zealand	5/25/2018	$779,781	180	180	646	$1,967,420	7/23/2018
-Poland	5/25/2018	$976,794	0	0	0	$3,611,467	1/1/2019
-Portugal	5/25/2018	$249,496	120	120	382	$768,733	8/15/2018
-Russia (CIS)	5/25/2018	$2,949,097	0	1296	4430	$6,042,127	1/1/2019
-Slovakia	5/25/2018	$107,115	72	72	160	$264,899	6/26/2018
-South Korea	5/25/2018	$932,661	569	569	969	$1,822,472	10/1/2018
-Spain	5/25/2018	$2,222,129	403	403	2161	$7,247,916	10/26/2018
-Sweden	5/25/2018	$1,300,000	0	0	0	$2,800,000	6/18/2018
-Taiwan	5/25/2018	$559,025	0	0	0	$980,802	9/13/2018
-Turkey	5/25/2018	$202,718	551	551	1067	$494,543	2/26/2019
-United Kingdom	5/25/2018	$8,074,106	680	684	3918	$25,840,048	10/11/2018
+{
+    solo:  {'Argentina': 904099, 'Australia*': 12937598, 'Brazil': 3618076, 'Bulgaria': 421718, 'China': 16600000, 'Czech Republic': 904395, 'France': 11329702, 'Germany': 16957284, 'Hong Kong': 953218, 'India': 300771, 'Indonesia': 1773295, 'Italy': 5255534, 'Japan': 18919408, 'Lithuania': 68836, 'Mexico': 4935067, 'Netherlands': 2904945, 'New Zealand': 1967420, 'Poland': 3611467, 'Portugal': 768733, 'Russia (CIS)': 6042127, 'Slovakia': 264899, 'South Korea': 1822472, 'Spain': 7247916, 'Sweden': 2800000, 'Taiwan': 980802, 'Turkey': 494543, 'United Kingdom': 25840048},
+    tlj:  {'Argentina': 5372661, 'Australia*': 44875768, 'Belgium': 0, 'Brazil': 19108918, 'Bulgaria': 1804811, 'Cambodia': 0, 'Chile': 0, 'China': 41200000, 'Colombia': 0, 'Croatia': 0, 'Cyprus': 0, 'Czech Republic': 3832537, 'Denmark': 11000000, 'Estonia': 0, 'Finland': 0, 'France': 64974040, 'Germany': 83164496, 'Greece': 0, 'Hong Kong': 5618798, 'Hungary': 0, 'India': 1458333, 'Indonesia': 5223333, 'Ireland': 0, 'Israel': 0, 'Italy': 18138020, 'Japan': 66662688, 'Kuwait': 0, 'Lithuania': 394950, 'Malaysia': 0, 'Mexico': 13590940, 'Netherlands': 12944717, 'New Zealand': 6244816, 'Norway': 1500000, 'Pakistan': 0, 'Philippines': 0, 'Poland': 12990972, 'Portugal': 3285750, 'Romania': 0, 'Russia (CIS)': 16068138, 'Serbia and Montenegro': 0, 'Singapore': 0, 'Slovakia': 1022454, 'Slovenia': 0, 'South Africa': 0, 'South Korea': 7981958, 'Spain': 25847888, 'Sweden': 15800000, 'Taiwan': 3534284, 'Turkey': 2653217, 'Ukraine': 0, 'United Kingdom': 111883703, 'Vietnam': 0},
+    r1:  {'Argentina': 3695360, 'Australia*': 37481196, 'Brazil': 14600000, 'Bulgaria': 980409, 'China': 69484896, 'Czech Republic': 1583853, 'Denmark': 6100000, 'France': 39366912, 'Germany': 46603040, 'Hong Kong': 5000000, 'Indonesia': 3200000, 'Italy': 10866280, 'Japan': 39164664, 'Lithuania': 216524, 'Mexico': 11409999, 'Netherlands': 7888694, 'New Zealand': 5081349, 'Philippines': 2700000, 'Poland': 8159017, 'Portugal': 1681718, 'Russia (CIS)': 11409243, 'Slovakia': 484299, 'Slovenia': 244190, 'South Korea': 7512870, 'Spain': 16685342, 'Sweden': 11000000, 'Turkey': 1748618, 'United Kingdom': 81837978},
+    tfa:  {'Argentina': 8650249, 'Australia*': 67219352, 'Austria': 9070862, 'Belgium': 10978138, 'Bolivia': 1868562, 'Brazil': 27982312, 'Bulgaria': 2261855, 'Cambodia': 169976, 'Central America': 6804078, 'Chile': 8312477, 'China': 120220000, 'Colombia': 9130293, 'Croatia': 1245788, 'Czech Republic': 3846700, 'Denmark': 11965142, 'Ecuador': 3211683, 'Egypt': 153648, 'Finland': 7815008, 'France': 82531280, 'Germany': 109709280, 'Greece': 3406287, 'Hong Kong': 11048604, 'Hungary': 6445986, 'Iceland': 863721, 'Indonesia': 8876120, 'Iraq': 77124, 'Israel': 3385097, 'Italy': 27813156, 'Japan': 95468056, 'Kenya': 285657, 'Kuwait': 732476, 'Latvia': 414134, 'Lebanon': 606176, 'Lithuania': 558181, 'Malaysia': 6627347, 'Mexico': 27649496, 'Netherlands': 15336444, 'New Zealand': 9842721, 'Norway': 1100000, 'Oman': 45986, 'Peru': 6127657, 'Philippines': 8163463, 'Poland': 16323223, 'Portugal': 4049362, 'Romania': 3237704, 'Russia (CIS)': 26689556, 'Serbia and Montenegro': 711089, 'Singapore': 7173581, 'Slovakia': 1089747, 'Slovenia': 577440, 'South Africa': 3111568, 'South Korea': 24112820, 'Spain': 35980308, 'Sweden': 21289424, 'Switzerland': 12159927, 'Taiwan': 6457562, 'Thailand': 4458518, 'Turkey': 5513572, 'Ukraine': 2896101, 'United Arab Emirates': 6060045, 'United Kingdom': 163608625, 'Uruguay': 468960, 'Venezuela': 16505641, 'Vietnam': 895542},
+}

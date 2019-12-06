@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/data.js"></script>
         <script src="index.js"></script>
@@ -24,14 +30,32 @@
                     <h1>Declan's Presentation</h1>
                     </div>
                     
-                    <p>It is the end of the quarter. The Rise of Skywalker is approaching. JJ Abrams has reached out to ask: "How do you make a great Star Wars film?"</p>      
-                    <p>Armed with a new data viz understanding, it is Declan's job to analyze the previous films and find out what makes the great ones great.</p>
+                    <p>It is the end of the quarter. THE RISE OF SKYWALKER is approaching. JJ ABRAMS has reached out to ask: "How do you make a great STAR WARS film?"</p>      
+                    <p>Armed with a new DATA VIZ understanding, it is Declan's job to analyze the previous films and find out what makes the great ones great.</p>
                 </div>
             </section>
         </div>
 
         <div class="info" id="info">
-            How do you make a great Star Wars film?
+            <div class="map" id="map">
+                <div class="onlymap">
+                    <div id="container"></div>
+                    <div class="button movie" id="tfa">The Force Awakens</div>
+                    <div class="button movie" id="r1">Rogue One</div>
+                    <div class="button movie" id="tlj">The Last Jedi</div>
+                    <div class="button movie" id="solo">Solo</div>
+                </div>
+                <div class="textmap">
+                    <h2>Top 5</h2>
+                    <ol>
+                        <li id="top1"></li>
+                        <li id="top2"></li>
+                        <li id="top3"></li>
+                        <li id="top4"></li>
+                        <li id="top5"></li>
+                    </ol>
+                </div>
+            </div>
         </div>
 
     </body>
