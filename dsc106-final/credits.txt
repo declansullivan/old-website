@@ -1,0 +1,2 @@
+Star Wars Crawl: https://css-tricks.com/snippets/css/star-wars-crawl-text/
+Sleep: https://flaviocopes.com/javascript-sleep/
