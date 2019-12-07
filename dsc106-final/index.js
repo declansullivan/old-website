@@ -596,7 +596,7 @@ window.onload = function () {
             updateData('tfa');
             audio.pause();
             crawl.style.display = "none";
-            document.body.style.background = "#faf5f1";
+            document.body.style.background = "white";
             planets.style.backgroundColor = "grey";
         }
     }
