@@ -11,7 +11,7 @@ body {
 }
 
 .button {
-    background-color: white; /* Green */
+    background-color: white;
     border: none;
     color: black;
     padding: 30px 64px;
@@ -24,7 +24,7 @@ body {
 }
 
 .button:hover {
-    background-color: grey; /* Green */
+    background-color: grey;
     color: black;
     cursor: pointer;
 }
@@ -104,7 +104,8 @@ body {
 }
 
 .earnings.other {
-    width: 35%;
+    width: 42%;
+    float: right;
 }
 
 .text {
@@ -121,4 +122,26 @@ body {
     float: left;
     text-align: center;
     padding: 10px;
+}
+
+.container {
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.togglebutton {
+    display: inline-block;
+    width: 25%;
+    font-size: 20px;
+    padding: 16px 32px;
+    background-color: #FCF7FF;
+}
+
+.togglebutton:hover {
+    cursor: pointer;
 }

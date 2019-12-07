@@ -4,6 +4,7 @@ var button;
 var crawl;
 var map, bar, timeline, text, radar, pie, line;
 var countryMovieData = [];
+var planets, runtime;
 
 var tfaDesc = 'The Force Awakens was a box office breaking success, becoming the <strong>highest grossing</strong> film of all time after its release. \
 All Star War films prior to this had come out in May, although Disney had the idea to release in <strong>December</strong>, meaning there was not a lot \
@@ -105,6 +106,8 @@ window.onload = function () {
     button = this.document.getElementById('start');
     crawl = this.document.getElementById('crawl');
     text = this.document.getElementById('textcontainer');
+    planets = this.document.getElementById('planets');
+    runtime = this.document.getElementById('runtime');
 
     // MAPCHART
     Highcharts.data({
@@ -497,6 +500,45 @@ window.onload = function () {
                 }]
             });
 
+            planets.onmouseover= function() {
+                pie.setTitle({text: 'Planets in Each Film'});
+                pie.series[0].setData([{
+                    name: 'The Force Awakens',
+                    y: 6
+                }, {
+                    name: 'Rogue One',
+                    y: 7
+                }, {
+                    name: 'The Last Jedi',
+                    y: 4
+                }, {
+                    name: 'Solo',
+                    y: 5
+                }]);
+
+                planets.style.backgroundColor = "grey";
+                runtime.style.backgroundColor = "#FCF7FF";
+            }
+
+            runtime.onmouseover = function() {
+                pie.setTitle({text: 'Runtime of Each Film'});
+                pie.series[0].setData([{
+                    name: 'The Force Awakens',
+                    y: 135
+                }, {
+                    name: 'Rogue One',
+                    y: 133
+                }, {
+                    name: 'The Last Jedi',
+                    y: 152
+                }, {
+                    name: 'Solo',
+                    y: 135
+                }]);
+
+                runtime.style.backgroundColor = "grey";
+                planets.style.backgroundColor = "#FCF7FF";
+            }
         },
         error: function () {
             document.getElementById('mapcontainer').innerHTML = '<div class="loading">' +
@@ -548,13 +590,14 @@ window.onload = function () {
     function fade(){
         try {
             audio.volume -= 0.1;
-            setTimeout(fade, 250);
+            setTimeout(fade, 200);
             // setTimeout(fade, 00);
         } catch (e) {
             updateData('tfa');
             audio.pause();
             crawl.style.display = "none";
             document.body.style.background = "#faf5f1";
+            planets.style.backgroundColor = "grey";
         }
     }
 }
