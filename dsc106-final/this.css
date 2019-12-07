@@ -17,7 +17,7 @@ body {
     padding: 30px 64px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: none;
     font-size: 32px;
     margin-top: 400px;
     transition-duration: 0.4s;
@@ -66,7 +66,7 @@ body {
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 30s linear;
+    animation: crawl 25s linear;
 }
   
 .crawl > .title {
@@ -90,52 +90,18 @@ body {
     }
 }
 
-.info {
-    background: white;
+.earnings {
+    width: 55%;
+    float: left;
     text-align: center;
-    width: 100%;
-    height: 500px;
-    display: none;
+    padding: 10px;
 }
 
-.map {
-    width: 100%;
-    height: 400px;
+.earnings.other {
+    width: 35%;
 }
 
-.onlymap {
-    width: 60%;
-    float: left;
-}
-
-.container {
-    width: 100%;
-}
-
-.textmap {
-    width: 30%;
-    float: left;
-    color: #feda4a;
+.text {
     text-align: left;
-    padding: 20px;
-    font-size: 24px;
-}
-
-.button.movie {
-    background-color: black; /* Green */
-    border: none;
-    color: #feda4a;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 0px;
-    font-size: 20px;
-    transition-duration: 0.4s;
-}
-
-.button.movie:hover {
-    background-color: grey; /* Green */
-    color: black;
-    cursor: pointer;
+    height: 400px;
 }
