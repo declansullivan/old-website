@@ -2,29 +2,29 @@ audio = new Audio("./assests/starwars.mp3");
 var buttonholder;
 var button;
 var crawl;
-var map, bar, timeline, text;
+var map, bar, timeline, text, radar, pie, line;
 var countryMovieData = [];
 
-var tfaDesc = 'The Force Awakens was a box office breaking success, becoming the highest grossing film of all time after its release. \
-All Star War films prior to this had come out in May, although Disney had the idea to release in December, meaning there was not a lot \
-of competition, and everyone was with family and could go see it together. This also made Christmas time Star Wars time for the next three years. \
+var tfaDesc = 'The Force Awakens was a box office breaking success, becoming the <strong>highest grossing</strong> film of all time after its release. \
+All Star War films prior to this had come out in May, although Disney had the idea to release in <strong>December</strong>, meaning there was not a lot \
+of competition, and everyone was with family and could go see it together. This also made <strong>Christmas</strong> time Star Wars time for the next three years. \
 Young people were excited for a new Star Wars movie, and those who had grown up with the films were excited to see where their beloved characters \
-had ended up. It was a perfect storm for a huge success.';
-var r1Desc = 'Rogue One was a solid Star Wars film. It had a good story, some great action set pieces, and a diverse cast to draw in an \
+had ended up. It was a perfect storm for a huge <strong>success</strong>.';
+var r1Desc = 'Rogue One was a solid Star Wars film. It had a good story, some great action set pieces, and a <strong>diverse</strong> cast to draw in an \
 audience. It did not perform as well as The Force Awakens, although that seemed impossible as it took Avengers: Endgame, to overthrow it. \
-Rogue One still stood well however, likely because of its cast. Two cast members, Donnie Yen and Jiang Wen, drew a Chinese audience that \
-brought in box office numbers not seen from China in Star Wars movies afterwards. Diego Luna also drew a Mexican audience, allowing for the \
+Rogue One still stood well however, likely because of its cast. Two cast members, Donnie Yen and Jiang Wen, drew a <strong>Chinese</strong> audience that \
+brought in box office numbers not seen from China in Star Wars movies afterwards. Diego Luna also drew a <strong>Mexican</strong> audience, allowing for the \
 Mexico box office to remain at a similar standing as The Last Jedi, and above Solo.';
-var tljDesc = 'The Last Jedi was seen as quite a polarizing film. All online discussions seemed to gravitate torwards either loving it, or \
+var tljDesc = 'The Last Jedi was seen as quite a <strong>polarizing</strong> film. All online discussions seemed to gravitate torwards either loving it, or \
 absolutely hating it, with no in between. Regardless of what the side you are on, it is clear that it did not perform as well as the recent Star \
-Wars films before it. It performed worse in the USA than Rogue One, and it made just over half of what The Force Awakens made, surprising for a \
+Wars films before it. It performed <strong>worse</strong> in the USA than Rogue One, and it made just over half of what The Force Awakens made, surprising for a \
 midway point in this epic saga. Overall, it may have been because while Rogue One was a self contained story, and Force Awakens set up many questions \
-and possibilities for the trilogy to go, The Last Jedi did not capitalize on the opportunities it had been given, and resulted in a story where not \
+and possibilities for the trilogy to go, The Last Jedi did not <strong>capitalize</strong> on the <strong>opportunities</strong> it had been given, and resulted in a story where not \
 a lot occurred until the very end.';
 var soloDesc = 'Solo, like The Last Jedi, was another Star Wars film that began to perform less impressively as the box. While its gross is still \
-impressive, it is nothing like its predecessors in this generation of Star Wars. Solo was also timed incredibly strangely. Instead of waiting a year \
-between movies, Solo was released only five months after The Last Jedi, and it was released alongside Avengers: Infinity War and Deadpool 2, so it had \
-major competition. It also broke the Christmas Star Wars streak, which was another odd choice for Disney to make.';
+impressive, it is nothing like its predecessors in this generation of Star Wars. Solo was also <strong>timed</strong> incredibly <strong>strangely</strong>. Instead of waiting a <strong>year</strong> \
+between movies, Solo was released only <strong>five months</strong> after The Last Jedi, and it was released alongside Avengers: Infinity War and Deadpool 2, so it had \
+<strong>major competition</strong>. It also broke the Christmas Star Wars streak, which was another odd choice for Disney to make.';
 
 var movieData = {
     tfa:  {'United States': 936662225, 'Argentina': 8650249, 'Australia': 67219352, 'Austria': 9070862, 'Belgium': 10978138, 'Bolivia': 1868562, 'Brazil': 27982312, 'Bulgaria': 2261855, 'Cambodia': 169976, 'Central America': 6804078, 'Chile': 8312477, 'China': 120220000, 'Colombia': 9130293, 'Croatia': 1245788, 'Czech Republic': 3846700, 'Denmark': 11965142, 'Ecuador': 3211683, 'Egypt': 153648, 'Finland': 7815008, 'France': 82531280, 'Germany': 109709280, 'Greece': 3406287, 'Hong Kong': 11048604, 'Hungary': 6445986, 'Iceland': 863721, 'Indonesia': 8876120, 'Iraq': 77124, 'Israel': 3385097, 'Italy': 27813156, 'Japan': 95468056, 'Kenya': 285657, 'Kuwait': 732476, 'Latvia': 414134, 'Lebanon': 606176, 'Lithuania': 558181, 'Malaysia': 6627347, 'Mexico': 27649496, 'Netherlands': 15336444, 'New Zealand': 9842721, 'Norway': 1100000, 'Oman': 45986, 'Peru': 6127657, 'Philippines': 8163463, 'Poland': 16323223, 'Portugal': 4049362, 'Romania': 3237704, 'Russia': 26689556, 'Serbia and Montenegro': 711089, 'Singapore': 7173581, 'Slovakia': 1089747, 'Slovenia': 577440, 'South Africa': 3111568, 'South Korea': 24112820, 'Spain': 35980308, 'Sweden': 21289424, 'Switzerland': 12159927, 'Taiwan': 6457562, 'Thailand': 4458518, 'Turkey': 5513572, 'Ukraine': 2896101, 'United Arab Emirates': 6060045, 'United Kingdom': 163608625, 'Uruguay': 468960, 'Venezuela': 16505641, 'Vietnam': 895542},
@@ -33,17 +33,27 @@ var movieData = {
     solo:  {'United States': 213767512, 'Argentina': 904099, 'Australia': 12937598, 'Brazil': 3618076, 'Bulgaria': 421718, 'China': 16600000, 'Czech Republic': 904395, 'France': 11329702, 'Germany': 16957284, 'Hong Kong': 953218, 'India': 300771, 'Indonesia': 1773295, 'Italy': 5255534, 'Japan': 18919408, 'Lithuania': 68836, 'Mexico': 4935067, 'Netherlands': 2904945, 'New Zealand': 1967420, 'Poland': 3611467, 'Portugal': 768733, 'Russia': 6042127, 'Slovakia': 264899, 'South Korea': 1822472, 'Spain': 7247916, 'Sweden': 2800000, 'Taiwan': 980802, 'Turkey': 494543, 'United Kingdom': 25840048},
 }
 
+var weeklyEarnings = {
+    tfa:  [247966675, 540058914, 742208942, 812734828, 852274958, 879110994, 895760846, 906044785, 914804240, 921713590, 925988323, 928842219, 930757012, 932324258, 933674012, 934898148, 935528312, 935832841, 936064861, 936390462, 936519683, 936627416, 936658640],
+    r1:  [155081681, 286033442, 424987707, 477364924, 498559923, 512376033, 520200086, 524632391, 527162956, 528602776, 529443931, 529828733, 530118047, 530748437, 531314491, 531721570, 531958137, 532069811, 532132035, 532171696, 532171696, 532171696, 532171696],
+    tlj:  [220009584, 368167854, 517218368, 572691546, 592129065, 604273911, 610795822, 614455022, 616833692, 618040475, 618728556, 619116325, 619483244, 619791373, 619967829, 620097892, 620164565, 620178595, 620178595, 620178595, 620178595, 620178595, 620178595],
+    solo:  [84420489, 148989574, 176700049, 193765143, 202639402, 207673785, 210931529, 211920767, 212418646, 212730648, 213029424, 213285583, 213462269, 213593805, 213685536, 213741023, 213762989, 213762989, 213762989, 213762989, 213762989, 213762989, 213762989],
+}
+
 var movieInfo = {
     'tfa': {
         slice: 62,
         name: 'The Force Awakens',
         index: 0,
-        source: 'https://www.the-numbers.com/movie/Star-Wars-Ep-VII-The-Force-Awaken',
+        source: 'https://www.the-numbers.com/movie/Star-Wars-Ep-VII-The-Force-Awakens',
         topFive: {
             categories: ["United States", "United Kingdom", "China", "Germany", "Japan"],
             values: [936662225, 163608625, 120220000, 109709280, 95468056]
         },
-        desc: tfaDesc
+        desc: tfaDesc,
+        // rta, rtc, mc, imdb, ign
+        ratings: [86, 93, 81, 79, 88],
+        planets: 6
     },
     'r1': {
         slice: 29,
@@ -54,7 +64,10 @@ var movieInfo = {
             categories: [],
             values: []
         },
-        desc: r1Desc
+        desc: r1Desc,
+        // rta, rtc, mc, imdb, ign
+        ratings: [86, 83, 65, 78, 90],
+        planets: 7
     },
     'tlj': {
         slice: 51,
@@ -65,7 +78,10 @@ var movieInfo = {
             categories: [],
             values: []
         },
-        desc: tljDesc
+        desc: tljDesc,
+        // rta, rtc, mc, imdb, ign
+        ratings: [43, 91, 85, 71, 97],
+        planets: 4
     },
     'solo': {
         slice: 27,
@@ -76,7 +92,10 @@ var movieInfo = {
             categories: [],
             values: []
         },
-        desc: soloDesc
+        desc: soloDesc,
+        // rta, rtc, mc, imdb, ign
+        ratings: [63, 70, 62, 69, 70],
+        planets: 5
     }
 }
 
@@ -186,7 +205,6 @@ window.onload = function () {
                     symbolRadius: 0,
                     symbolHeight: 14
                 },
-
                 colorAxis: {
                     dataClassColor: 'category',
                     dataClasses: [{
@@ -236,6 +254,7 @@ window.onload = function () {
             bar = Highcharts.chart('barcontainer', {
                 chart: {
                     type: 'bar',
+                    borderWidth: 1,
                     backgroundColor: null
                 },
                 title: {
@@ -276,7 +295,9 @@ window.onload = function () {
                     enabled: false
                 },
                 series: [{
+                    name: 'Box Office Earnings',
                     type: 'bar',
+                    colorByPoint: 'true',
                     data: []
                 }]
             });
@@ -284,6 +305,7 @@ window.onload = function () {
             timeline = Highcharts.chart('timelinecontainer', {
                 chart: {
                     type: 'timeline',
+                    borderWidth: 1,
                     backgroundColor: null
                 },
                 plotOptions: {
@@ -346,6 +368,135 @@ window.onload = function () {
                     }]
                 }]
             });
+
+            radar = Highcharts.chart('radarcontainer', {
+                chart: {
+                    polar: true,
+                    borderWidth: 1,
+                    backgroundColor: null
+                },
+                title: {
+                    text: ''
+                },
+                subtitle: {
+                    text: 'Source: Respective Websites'
+                },
+                pane: {
+                    startAngle: 0,
+                    endAngle: 360
+                },
+                xAxis: {
+                    type: "category",
+                           categories: ['Rotten Tomatoes (Audience)', 'Rotten Tomatoes (Critics)', 'Metacritic', 'IMDB', 'IGN']
+                },
+                yAxis: {
+                  "type": "linear",
+                  "labels": {},
+                  "opposite": false
+                },
+                series: [{
+                    type: 'line',
+                    name: 'Rating',
+                    data: []
+                }]
+            });
+
+            pie = Highcharts.chart('piecontainer', {
+                chart: {
+                    borderWidth: 1,
+                    backgroundColor: null,
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Planets in Each Film'
+                },
+                subtitle: {
+                    text: 'https://www.starwars.com/'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Planets',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'The Force Awakens',
+                        y: 6
+                    }, {
+                        name: 'Rogue One',
+                        y: 7
+                    }, {
+                        name: 'The Last Jedi',
+                        y: 4
+                    }, {
+                        name: 'Solo',
+                        y: 5
+                    }]
+                }]
+            });
+
+            line = Highcharts.chart('linecontainer', {
+                chart: {
+                    borderWidth: 1,
+                    backgroundColor: null
+                },
+                title: {
+                    text: 'Weekly Box Office Earnings'
+                },
+                subtitle: {
+                    text: 'Source: thenumbers.com'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Earnings in Dollars'
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        pointStart: 1
+                    },
+                    line: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    valuePrefix: '$'
+                },
+                series: [{
+                    name: 'The Force Awakens',
+                    data: weeklyEarnings['tfa']
+                }, {
+                    name: 'Rogue One',
+                    data: weeklyEarnings['r1']
+                }, {
+                    name: 'The Last Jedi',
+                    data: weeklyEarnings['tlj']
+                }, {
+                    name: 'Solo',
+                    data: weeklyEarnings['solo']
+                }]
+            });
+
         },
         error: function () {
             document.getElementById('mapcontainer').innerHTML = '<div class="loading">' +
@@ -361,7 +512,7 @@ window.onload = function () {
         buttonholder.style.display = "none";
         crawl.style.display = "inline";
         audio.play();
-        sleep(25000).then(() => {
+        sleep(25000).then(() => { //25
             fade();
         });
     }
@@ -374,6 +525,7 @@ window.onload = function () {
     
         map.series[0].setData(newData);
         map.setTitle({text: 'Total Box Office for ' + totalData.name + ' by Country'});
+        map.setSubtitle({text: 'Source: ' + totalData.source});
 
         bar.series[0].setData(vals);
         bar.xAxis[0].categories = cats;
@@ -382,7 +534,11 @@ window.onload = function () {
         bar.setTitle({text: 'Top 5 Box Office Earners for ' + totalData.name})
         bar.setSubtitle({text: 'Source: ' + totalData.source});
 
-        text.innerHTML = "<h1>Summary</h1><br>" + totalData.desc;
+        if (movie === 'tfa') radar.series[0].setData([86, 93, 81, 79, 88]);
+        else radar.series[0].setData(totalData.ratings);
+        radar.setTitle({text: 'Movie Ratings for ' + totalData.name});
+        
+        text.innerHTML = "<h1>Movie Summary</h1>" + totalData.desc;
     }
     
     const sleep = (milliseconds) => {

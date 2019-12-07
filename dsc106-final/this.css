@@ -90,6 +90,12 @@ body {
     }
 }
 
+.header {
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
+}
+
 .earnings {
     width: 55%;
     float: left;
@@ -103,5 +109,16 @@ body {
 
 .text {
     text-align: left;
-    height: 400px;
+    font-size: 19px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-top: solid 1px;
+    padding: 10px;
+}
+
+.extra {
+    width: 55%;
+    float: left;
+    text-align: center;
+    padding: 10px;
 }
