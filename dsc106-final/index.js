@@ -414,7 +414,7 @@ window.onload = function () {
                     type: 'pie'
                 },
                 title: {
-                    text: 'Planets in Each Film'
+                    text: 'Planets Introduced Each Film'
                 },
                 subtitle: {
                     text: 'https://www.starwars.com/'
@@ -437,10 +437,10 @@ window.onload = function () {
                         y: 6
                     }, {
                         name: 'Rogue One',
-                        y: 7
+                        y: 6
                     }, {
                         name: 'The Last Jedi',
-                        y: 4
+                        y: 2
                     }, {
                         name: 'Solo',
                         y: 5
@@ -501,16 +501,16 @@ window.onload = function () {
             });
 
             planets.onmouseover= function() {
-                pie.setTitle({text: 'Planets in Each Film'});
+                pie.setTitle({text: 'Planets Introduced in Each Film'});
                 pie.series[0].setData([{
                     name: 'The Force Awakens',
                     y: 6
                 }, {
                     name: 'Rogue One',
-                    y: 7
+                    y: 6
                 }, {
                     name: 'The Last Jedi',
-                    y: 4
+                    y: 2
                 }, {
                     name: 'Solo',
                     y: 5
